@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_hotgoods_img"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100" />
+
+    <TextView
+        android:id="@+id/tv_hotgoods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/iv_hotgoods_img"
+        android:text="111"/>
+
+    <TextView
+        android:id="@+id/tv_hotgoods_goods_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/iv_hotgoods_img"
+        android:layout_below="@id/tv_hotgoods_name"
+        android:text="111"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/tv_hotgoods_retail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hotgoods_goods_brief"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_toRightOf="@id/iv_hotgoods_img"
+        android:text="111"
+        android:textColor="#F62B2B"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+
+</RelativeLayout>

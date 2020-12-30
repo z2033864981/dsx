@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="@dimen/dp_250">
+
+    <ImageView
+        android:id="@+id/iv_channel1_img"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_140"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/tv_channel1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_channel1_img"
+        android:text="11"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_channel1_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_channel1_name"
+        android:textColor="#D50000"
+        android:gravity="center"
+        android:text="111"/>
+</RelativeLayout>

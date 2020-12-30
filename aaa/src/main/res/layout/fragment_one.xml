@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.OneFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="@dimen/dp_350"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+                android:background="@drawable/one_shop"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_80"
+                    android:src="@mipmap/b1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品搜索，共239款好物"
+                    android:textColor="#A1A1A1" />
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <LinearLayout
+                android:id="@+id/layout_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#E3E3E3"/>
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:paddingLeft="@dimen/dp_140"
+                android:paddingTop="@dimen/dp_18"
+                android:text="品牌制造商直供"
+                android:textSize="@dimen/dp_16"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/brandList_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_260" />
+
+            <TextView
+                android:id="@+id/tv_newgoods"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:paddingLeft="@dimen/dp_140"
+                android:paddingTop="@dimen/dp_18"
+                android:text="周一周四·新品首发"
+                android:textSize="@dimen/dp_16"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newGoodsList_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="370dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#E3E3E3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:paddingLeft="@dimen/dp_170"
+                android:paddingTop="@dimen/dp_18"
+                android:text="人气推荐"
+                android:textSize="@dimen/dp_16"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hotGoodsList_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_300" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#E3E3E3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:paddingLeft="@dimen/dp_170"
+                android:paddingTop="@dimen/dp_18"
+                android:text="专题精选"
+                android:textSize="@dimen/dp_16"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topicList_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_240" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#E3E3E3"/>
+
+            <LinearLayout
+                android:id="@+id/linesr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

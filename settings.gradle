@@ -1,0 +1,5 @@
+include ':mshop'
+
+include ':app:shopping'
+include ':app'
+rootProject.name = "dsx"

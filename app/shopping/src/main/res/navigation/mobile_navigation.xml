@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.shopping.ui.home.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_car"
+            app:destination="@id/navigation_car" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.shopping.ui.shop.ShopFragment"
+        android:label="专题"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.shopping.ui.sort.SortFragment"
+        android:label="分类"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_car"
+
+        android:name="com.example.shopping.ui.car.CarFragment"
+        android:label="购物车"
+        tools:layout="@layout/fragment_me" />
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.example.shopping.ui.me.MeFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_me" />
+
+</navigation>

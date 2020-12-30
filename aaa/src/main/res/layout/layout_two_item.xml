@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:id="@+id/iv_two_scence_pic"
+        android:scaleType="matrix"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感到附属国豆腐干"
+            android:textStyle="bold"
+            android:textSize="@dimen/dp_18"
+            android:gravity="center"
+            android:id="@+id/tv_two_title"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感到附属国豆腐干"
+            android:gravity="center"
+            android:id="@+id/tv_two_subtitle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:gravity="center"
+            android:textColor="#ff00"
+            android:id="@+id/tv_two_price"
+            />
+    </LinearLayout>
+
+</LinearLayout>

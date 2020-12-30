@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.client"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //bottom navigation
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'com.github.kinkoi:materialsearchview:1.4.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //um
+//    implementation "com.umeng.umsdk:common:9.1.0"
+//    implementation "com.umeng.umsdk:asms:1.1.3" // asms包依赖(必选)
+//    implementation "com.umeng.umsdk:crash:0.0.4" // native crash包依赖(必选)
+//
+//    implementation  'com.umeng.umsdk:share-core:7.0.2'
+//    implementation  'com.umeng.umsdk:share-board:7.0.2'
+//    implementation  'com.umeng.umsdk:share-wx:7.0.2'
+    //三方分享平台 其他不包括的需要jar包实现
+    /*implementation  'com.umeng.umsdk:share-qq:7.0.2'
+
+    implementation  'com.umeng.umsdk:share-sina:7.0.2'
+    implementation  'com.umeng.umsdk:share-alipay:7.0.2'
+    implementation  'com.umeng.umsdk:share-dingding:7.0.2'
+
+*/
+
+    //banner
+    implementation 'com.youth.banner:banner:1.4.9'
+
+    implementation 'com.bm.photoview:library:1.4.1'
+
+    implementation 'com.jaeger.ninegridimageview:library:1.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //本地相机相册选择图片
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.3'
+
+
+    //极光
+    //implementation(name: 'com.heytap.msp-push-2.1.0', ext: 'aar')
+    //
+    //implementation(name:'BaiduLBS_AndroidSDK_Lib',ext: 'aar')
+
+    //compileOnly files('libs/BaiduLBS_Android.jar')
+
+
+    //环信
+    // Google firebase cloud messaging
+    /*implementation 'com.google.android.gms:play-services-base:11.4.0'
+    implementation 'com.google.firebase:firebase-messaging:11.4.0'
+    api 'com.hyphenate:hyphenate-sdk:3.6.8'*/
+
+    //oss
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+
+
+}

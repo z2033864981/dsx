@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Demo2</string>
+    <string name="bar_name_home">首页</string>
+    <string name="bar_name_topic">专题</string>
+    <string name="bar_name_sort">分类</string>
+    <string name="bar_name_shop">购物车</string>
+    <string name="bar_name_me">我的</string>
+
+    <string name="title_hotgood_all">综合</string>
+    <string name="title_hotgood_price">价格</string>
+    <string name="title_hotgood_sort">分类</string>
+
+    <string name="title_car_specs">请选择规格数量</string>
+    <string name="title_car_assess">评价($)</string>
+    <string name="title_car_lookall">查看全部</string>
+
+    <string name="tips_error_goodid">错误的商品id</string>
+
+    <string name="hint_login_username">账号</string>
+    <string name="hint_login_pw">密码</string>
+
+    <string name="tips_login">请输入正确的用户名和密码</string>
+    <string name="tips_logins">登陆成功</string>
+
+    <!--me regist-->
+    <string name="hint_regist_username">用户名</string>
+    <string name="hint_regist_pw">确认密码</string>
+    <string name="hint_regist_verification">验证码</string>
+    <string name="tips_regist">请输入正确的用户名和密码和确认密码</string>
+    <string name="tips_regist_pwd_repwd">密码和确认密码必须一致</string>
+    <string name="tips_regist_pw_6">密码必须大于6位</string>
+    <string name="tips_regist_ver">正确填写验证码</string>
+    <string name="tips_regist_re">用户已经被注册</string>
+
+    <string name="tips_buynumber">请选中购买商品数量</string>
+
+
+</resources>
